@@ -114,7 +114,7 @@ IP source       | DNS server      | Count DNS request | Query
 # SCREENSHOT 
 
 
-![](screenshot.png)
+![](Screenshot.png)
 
 # CONTACT ME
 
