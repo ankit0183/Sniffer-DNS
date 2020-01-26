@@ -8,6 +8,7 @@ Setup
   
 ```
 sudo apt-get install python-scapy
+
 ```
   
 Help
@@ -15,6 +16,7 @@ Help
   
 ```
 python sniffer-dns.py -h
+
 ```
 
 Examples of Use
@@ -26,7 +28,7 @@ sudo python sniffer-dns.py
   
 For a specific interface :  
 ```
-sudo python sniffer-dns -i eth0
+sudo python sniffer-dns.py -i eth0
 ```
   
 If you want to log in a database :  
@@ -35,21 +37,24 @@ sudo python sniffer-dns -d db.sqlite
 sudo python sniffer-dns.py -d db.sqlite -i eth0
 ```
 or with quiet  
+
 ```
-sudo python sniffer-dns -d db.sqlite -q
-sudo python sniffer-dns -d db.sqlite -i eth0 -q
+sudo python sniffer-dns.py -d db.sqlite -q
+sudo python sniffer-dns.py -d db.sqlite -i eth0 -q
 ```
   
 Export the sqlite database to CSV :  
+
 ```
-sudo python sniffer-dns -d db.sqlite -e db.csv
+sudo python sniffer-dns.py -d db.sqlite -e db.csv
 ```
 
 
 Examples of ouput
 =================
   
-When you open Firefox :  
+When you open Firefox :
+  
 ```
 $ sudo python sniffer-dns.py
 IP source       | DNS server      | Count DNS request | Query
@@ -72,7 +77,8 @@ IP source       | DNS server      | Count DNS request | Query
                   
 ```
   
-When you use a local DNS cache :  
+When you use a local DNS cache :
+  
 ```
 $ sudo python sniffer-dns.py
 IP source       | DNS server      | Count DNS request | Query
@@ -103,4 +109,19 @@ IP source       | DNS server      | Count DNS request | Query
                                     1                   ads.activestate.com.
 
 
+```
+
+# SCREENSHOT 
+
+
+![](screenshot.png)
+
+# CONTACT ME
+
+
+'''
+Mail me- ankitkanojiya624@gmail.com
+
+Whats App me- +919768367597
+'''
 
