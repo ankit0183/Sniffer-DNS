@@ -14,35 +14,35 @@ Help
 ====
   
 ```
-python dns_sniffer.py -h
+python sniffer-dns.py -h
 ```
 
 Examples of Use
 ===============
 
 ```
-sudo python dns_sniffer.py
+sudo python sniffer-dns.py
 ```
   
 For a specific interface :  
 ```
-sudo python dns_sniffer.py -i eth0
+sudo python sniffer-dns -i eth0
 ```
   
 If you want to log in a database :  
 ```
-sudo python dns_sniffer.py -d db.sqlite
-sudo python dns_sniffer.py -d db.sqlite -i eth0
+sudo python sniffer-dns -d db.sqlite
+sudo python sniffer-dns.py -d db.sqlite -i eth0
 ```
 or with quiet  
 ```
-sudo python dns_sniffer.py -d db.sqlite -q
-sudo python dns_sniffer.py -d db.sqlite -i eth0 -q
+sudo python sniffer-dns -d db.sqlite -q
+sudo python sniffer-dns -d db.sqlite -i eth0 -q
 ```
   
 Export the sqlite database to CSV :  
 ```
-sudo python dns_sniffer.py -d db.sqlite -e db.csv
+sudo python sniffer-dns -d db.sqlite -e db.csv
 ```
 
 
@@ -51,7 +51,7 @@ Examples of ouput
   
 When you open Firefox :  
 ```
-$ sudo python dns_sniffer.py
+$ sudo python sniffer-dns.py
 IP source       | DNS server      | Count DNS request | Query
 192.168.13.37
                   192.168.13.254
@@ -74,7 +74,7 @@ IP source       | DNS server      | Count DNS request | Query
   
 When you use a local DNS cache :  
 ```
-$ sudo python dns_sniffer.py
+$ sudo python sniffer-dns.py
 IP source       | DNS server      | Count DNS request | Query
 127.0.0.1
                   127.0.1.1
